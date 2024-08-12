@@ -149,10 +149,10 @@ export function SynchronizedCameraControls() {
       cameraControls.forward(-0.002 * event?.deltaTime, true);
     });
     qKey.addEventListener("holding", (event) => {
-      cameraControls.elevate(-0.002 * event?.deltaTime, true);
+      cameraControls.elevate(-0. * event?.deltaTime, true);
     });
     eKey.addEventListener("holding", (event) => {
-      cameraControls.elevate(0.002 * event?.deltaTime, true);
+      cameraControls.elevate(0. * event?.deltaTime, true);
     });
 
     const leftKey = new holdEvent.KeyboardKeyHold("ArrowLeft", 20);
@@ -176,14 +176,14 @@ export function SynchronizedCameraControls() {
     upKey.addEventListener("holding", (event) => {
       cameraControls.rotate(
         0,
-        -0.05 * THREE.MathUtils.DEG2RAD * event?.deltaTime,
+        -0. * THREE.MathUtils.DEG2RAD * event?.deltaTime,
         true,
       );
     });
     downKey.addEventListener("holding", (event) => {
       cameraControls.rotate(
         0,
-        0.05 * THREE.MathUtils.DEG2RAD * event?.deltaTime,
+        0. * THREE.MathUtils.DEG2RAD * event?.deltaTime,
         true,
       );
     });
